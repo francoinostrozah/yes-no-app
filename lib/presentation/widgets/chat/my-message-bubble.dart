@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class MessageBubble extends StatelessWidget {
+class MyMessageBubble extends StatelessWidget {
+  const MyMessageBubble({super.key});
+
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
@@ -9,8 +11,8 @@ class MessageBubble extends StatelessWidget {
       Container(
         decoration: BoxDecoration(
             color: colors.primary, borderRadius: BorderRadius.circular(20)),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Text('Lorem ipsum dolor sit amet consectetuer',
               style: TextStyle(color: Colors.white)),
         ),
