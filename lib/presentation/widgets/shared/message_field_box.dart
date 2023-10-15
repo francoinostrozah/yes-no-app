@@ -21,8 +21,6 @@ class MessageFieldBox extends StatelessWidget {
       suffixIcon: IconButton(
         icon: const Icon(Icons.send_outlined),
         onPressed: () {
-          final textValue = textController.value.text;
-          print('button: ${textValue}');
           textController.clear();
         },
       ),
@@ -36,7 +34,6 @@ class MessageFieldBox extends StatelessWidget {
       controller: textController,
       decoration: inputDecoration,
       onFieldSubmitted: (value) {
-        print('Submit value: ${value}');
         textController.clear();
         focusNode.requestFocus();
       },

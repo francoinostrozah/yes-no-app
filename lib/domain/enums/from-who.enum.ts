@@ -1,4 +1,0 @@
-enum FromWho {
-    mine,
-    hers
-}
